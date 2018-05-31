@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="Home Hacks" content="DIY projekter til dig, der elsker at være kreativ!">
+<title>Home Hacks - Profil</title>
+	 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="magicthumb/magicthumb.js"></script>
+	
+	
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+			<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="magicthumb/magicthumb.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	
+	 <div class="wrapper">
+            <div class="item logo"><img  class="logo" src="pictures/logohomehacks.png" alt="homehacks"></div>
+		 <!-- START NAVIGATION -->
+           		<nav class="navbar navbar-expand-lg navbar-light">
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+					  		</button>
+					  
+							<!-- SEARCH FORM -->
+					  		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">						
+								<form class="form-inline my-2 my-lg-0">
+						  		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						  		<button class="btn_search btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+								</form>
+					  		</div>
+							<!-- NAVIGATION ICONS -->
+							<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+								<!-- HOME ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Forside">
+						  			<li class="nav-item">
+									<a class="nav-link navbar" href="index.html"><img class="menulogo" src="pictures/menu-ikoner/hjem_hvid.png" alt="homehacks"></a>
+						  			</li>
+								</button>
+								<!-- UDFORSK ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Udforsk">
+						  			<li class="nav-item">
+									<a class="nav-link navbar" href="udforsk.html"><img class="menulogo" src="pictures/menu-ikoner/udforsk_hvid.png" alt="homehacksudforsk"></a>
+						  			</li>
+								</button>
+								<!-- FAVORITTER ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Favoritter">
+							 		<li class="nav-item">
+									<a class="nav-link navbar" href="favoritter.html"><img class="menulogo" src="pictures/menu-ikoner/favoritter_hvid.png" alt="homehacksfavoritter"></a>
+						  			</li>
+								</button>
+								<!-- PROFIL ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Profil">
+							 		<li class="nav-item">
+									<a class="nav-link navbar" href="#"><img class="menulogo active" src="pictures/menu-ikoner/profil_hvid.png" alt="homehacksprofil"></a>
+						  			</li>
+								</button>
+							</ul>
+				</nav>
+		 
+				<!-- LINE UNDERNEATH NAVIGATION-->
+				<hr>
+		 
+        <!-- ARTICLE START -->    
+				
+				 <br>
+		 				<!-- TAKEN FROM W3SCHOOLS.COM-->
+						
+
+  
+<!-- LOG TAGET FRA YOUTUBE: https://www.youtube.com/watch?v=mJa_3IiKxFk&t=58s -->
+      <!--<img src="pictures/menu-ikoner/profil.png" alt="Avatar" class="avatar">-->
+   
+   <form name="login">
+	  		<div class="login">
+				<h2>PROFIL</h2>
+      <input type="text" placeholder="Brugernavn" name="userid" required>
+
+      <input type="password" placeholder="Password" name="pswrd" required>
+      <!-- <label class="huskbruger">
+        <input class="huskbruger" type="checkbox" checked="checked" name="remember"> Husk bruger
+      </label> -->
+      <input class="container_login" type="button" onclick="check(this.form)" value="Login"><br>
+		  <!--<span class="psw">Glemt <a href="#">password?</a>
+			</span>-->
+    </div>
+
+  </form>
+</div>
+
+
+		 	
+ 	
+		 
+		 
+		 
+            <footer class="item">&copy; Home Hacks</footer>
+            
+<script>		 
+	
+	$(function () {
+  		$('[data-toggle="tooltip"]').tooltip()
+	})
+	
+
+</script>
+		<script language="javascript">
+			function check(form)
+			{
+				if(form.userid.value == "johndoe" && form.pswrd.value == "1234")
+					{
+						window.open('profil_loggedin.html')
+					}
+				if(form.userid.value == "admin" && form.pswrd.value == "1234")
+					{
+						window.open('profil_loggedin.html')
+					}
+				
+			else
+				{
+					alert("Enten brugernavn eller password er forkert")
+				}
+			}
+	</script>		
+			   
+</body>
+</html>
+
+

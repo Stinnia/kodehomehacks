@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="Home Hacks" content="DIY projekter til dig, der elsker at være kreativ!">
+<title>Home Hacks - Banner version 2</title>
+	 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="magicthumb/magicthumb.js"></script>
+	
+	
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="magicthumb/magicthumb.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+<body>
+	
+	 <div class="wrapper">
+            <div class="item logo"><img  class="logo" src="pictures/logohomehacks.png" alt="homehacks"></div>
+		 <!-- START NAVIGATION -->
+           		<nav class="navbar navbar-expand-lg navbar-light">
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+					  		</button>
+					  
+							<!-- SEARCH FORM -->
+					  		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">						
+								<form class="form-inline my-2 my-lg-0">
+						  		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						  		<button class="btn_search btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+								</form>
+					  		</div>
+							<!-- NAVIGATION ICONS -->
+							<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+								<!-- HOME ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Forside">
+						  			<li class="nav-item">
+									<a class="nav-link navbar" href="index.html"><img class="menulogo" src="pictures/menu-ikoner/hjem_hvid.png" alt="homehacks"></a>
+						  			</li>
+								</button>
+								<!-- UDFORSK ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Udforsk">
+						  			<li class="nav-item">
+									<a class="nav-link navbar" href="udforsk.html"><img class="menulogo active" src="pictures/menu-ikoner/udforsk_hvid.png" alt="homehacksudforsk"></a>
+						  			</li>
+								</button>
+								<!-- FAVORITTER ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Favoritter">
+							 		<li class="nav-item">
+									<a class="nav-link navbar" href="favoritter.html"><img class="menulogo" src="pictures/menu-ikoner/favoritter_hvid.png" alt="homehacksfavoritter"></a>
+						  			</li>
+								</button>
+								<!-- PROFIL ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Profil">
+							 		<li class="nav-item">
+									<a class="nav-link navbar" href="profil.html"><img class="menulogo" src="pictures/menu-ikoner/profil_hvid.png" alt="homehacksprofil"></a>
+						  			</li>
+								</button>
+							</ul>
+				</nav>
+		 
+				<!-- LINE UNDERNEATH NAVIGATION-->
+				<hr>
+		 
+		 
+		 <div class="item videoheader"><button class="go-back-button pull-left" onclick="goBack()"><img src="pictures/sociale-medier-ikoner/icons8-go-back-50.png" alt="go-back"></button>
+            <article class="item">
+				<h2>BANNER 2. VERSION</h2>
+							<div class="wrapper">
+            <div class="item">
+				<video class="banner" autoplay loop controls>
+  <source src="videos/banner_2_version.mp4" type="video/mp4">
+</video>
+		</div>
+				</div>
+			</article>
+		
+		 
+		 </div>
+
+				
+			
+										
+				
+            <footer class="item">&copy; Home Hacks</footer>
+         </div>
+	
+	<script>
+		function goBack() {
+    window.history.back()
+}
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+	<script>
+		var figure = $(".video").hover( hoverVideo, hideVideo );
+
+		function hoverVideo(e) {  
+    		$('video', this).get(0).play(); 
+		}
+
+		function hideVideo(e) {
+    		$('video', this).get(0).pause(); 
+		}
+	
+		$(function () {
+  			$('[data-toggle="tooltip"]').tooltip()
+		})
+	
+	</script>
+</body>
+</html>

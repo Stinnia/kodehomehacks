@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Home Hacks" content="DIY projekter til dig, der elsker at være kreativ! Her på vores hjemmeside kan du finde mange forskellige hacks, alt fra syning til maling af møbler, som du har liggende derhjemme.">
+<title>Home Hacks - Stinnias blog</title>
+	 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="magicthumb/magicthumb.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+  
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+	<link href="style.css" rel="stylesheet" type="text/css">
+	
+		<link href="magicthumb/magicthumb.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+
+	<!-- JQUERY UI ATTACHMENTS -->
+  <script src="src/jquery-ui.js"></script>
+<link rel="stylesheet" href="src/jquery-ui.css">
+	<script type="text/javascript">
+       jQuery.noConflict();
+       jQuery(function () {
+            jQuery("#tabs").tabs();
+       });
+    </script>
+
+</head>
+
+<body>
+	
+	
+	
+	
+	 <div class="wrapper">
+          <div class="item logo"><img  class="logo" src="pictures/logohomehacks.png" alt="homehacks"></div>
+		 <!-- START NAVIGATION -->
+           		<nav class="navbar navbar-expand-lg navbar-light">
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+					  		</button>
+					  
+							<!-- SEARCH FORM -->
+					  		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">						
+								<form class="form-inline my-2 my-lg-0">
+						  		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						  		<button class="btn_search btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+								</form>
+					  		</div>
+							<!-- NAVIGATION ICONS -->
+							<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+								<!-- HOME ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Forside">
+						  			<li class="nav-item">
+									<a class="nav-link navbar" href="index.html"><img class="menulogo" src="pictures/menu-ikoner/hjem_hvid.png" alt="homehacks"></a>
+						  			</li>
+								</button>
+								<!-- UDFORSK ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Udforsk">
+						  			<li class="nav-item">
+									<a class="nav-link navbar" href="udforsk.html"><img class="menulogo" src="pictures/menu-ikoner/udforsk_hvid.png" alt="homehacksudforsk"></a>
+						  			</li>
+								</button>
+								<!-- FAVORITTER ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Favoritter">
+							 		<li class="nav-item">
+									<a class="nav-link navbar" href="favoritter.html"><img class="menulogo" src="pictures/menu-ikoner/favoritter_hvid.png" alt="homehacksfavoritter"></a>
+						  			</li>
+								</button>
+								<!-- PROFIL ICON -->
+								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Profil">
+							 		<li class="nav-item">
+									<a class="nav-link navbar" href="profil.html"><img class="menulogo active" src="pictures/menu-ikoner/profil_hvid.png" alt="homehacksprofil"></a>
+						  			</li>
+								</button>
+							</ul>
+				</nav>
+		 
+				<!-- LINE UNDERNEATH NAVIGATION-->
+				<hr>
+		 
+        <!-- ARTICLE START -->    
+					
+		 <div class="author">
+			 			 <h2>PROFIL</h2>
+						
+						
+					<div class="card">
+  <h5 class="card-header">John</h5>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text"><img class="profile_picture" src="pictures/menu-ikoner/profil.png" alt="profile picture">
+	  Navn: John Doe<br>
+	  <br>
+	  Alder: 28 år
+	  <br><br>
+		Beskrivelse: Jeg er en energisk ung mand, som elsker at være kreativ derhjemme men dekorering. Jeg bygger møbler om, tager noget gammelt og laver det til min egen.
+	  </p>
+    <a href="#" class="btn_search btn-primary">Go to the facebook page</a>
+  </div>
+</div>	
+			 
+			 
+			 <div class="card">
+				 <h2>Favorit Hacks</h2>
+						<table>
+						<tr>
+						<div id="videosList">           
+						<!-- TAKEN FROM CODE PEN
+						https://codepen.io/gil--/pen/bNxZWg-->
+					<th><a href="blog_julie.html">
+							<div class="video video_1">
+							<video class="thevideo video_size" loop preload="none" controls muted>
+							  <source src="videos/julievideo_thumb.mp4" type="video/mp4">
+							  <source src="videos/julievideo_thumb.mp4" type="video/webm">
+							</video>
+						  	</div>
+						</a>
+					</th>
+							<th><a href="blog_amara.html">
+							<div class="video video_2 møbler column hack">
+								<video class="thevideo video_size" loop preload="none" controls muted>
+							  	<source src="videos/amaravideo_thumb.mp4" type="video/mp4">
+							  	<source src="videos/amaravideo_thumb.mp4" type="video/webm">
+								</video>
+						  	</div>
+						</a>
+					</th>
+							</div>
+				
+	  					</tr>
+					</table>
+				 
+				 </div>
+		 </div>
+            <footer class="item">&copy; Home Hacks</footer>
+            
+<script>		 
+	var figure = $(".video").hover( hoverVideo, hideVideo );
+
+	function hoverVideo(e) {  
+    	$('video', this).get(0).play(); 
+	}
+
+	function hideVideo(e) {
+    	$('video', this).get(0).pause(); 
+	}
+	
+	$(function () {
+  		$('[data-toggle="tooltip"]').tooltip()
+	})
+</script>
+	</div>	
+			   
+</body>
+</html>
+
+
