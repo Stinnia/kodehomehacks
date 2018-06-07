@@ -2,6 +2,7 @@
 <html lang="da">
 <head>
 <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="Home Hacks DIY" content="DIY projekter til dig, der elsker at være kreativ! Her på vores hjemmeside kan du finde mange forskellige hacks, alt fra syning til maling af møbler, som du har liggende derhjemme.">
 <meta name="og:Home Hacks" property="og:DIY Projects" content="DIY projekter til dig, der elsker at være kreativ! Her på vores hjemmeside kan du finde mange forskellige hacks, alt fra syning til maling af møbler, som du har liggende derhjemme.">
 <meta property="og:image" content="pictures/home_logo.png" />
@@ -23,26 +24,23 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="style.css" rel="stylesheet" type="text/css">
 <link href="magicthumb/magicthumb.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
 <div class="wrapper">
   <div class="item">
-    <video id="vid" class="logoheader" width="800" autoplay="autoplay">
-      <source src="videos/header.mp4" type="video/mp4">
+    <video id="vid" class="logoheader" autoplay>
+      <source class="logoheader" src="videos/header.mp4" type="video/mp4">
     </video>
+	  <img  class="logoheader_resp" src="pictures/logohomehacks.png" alt="homehacks">
   </div>
   <!-- START NAVIGATION -->
   <nav class="navbar navbar-expand-lg navbar-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+ 
     
     <!-- SEARCH FORM -->
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn_search btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
+   
     <!-- NAVIGATION ICONS -->
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <!-- HOME ICON -->
@@ -83,9 +81,10 @@
     <video class="home_video" autoplay loop>
       <source src="videos/intro_video.mp4" type="video/mp4" />
     </video>
-    <section><h5>På vores side kan du finde alle mulige hacks til at personliggøre dit hjem. Du kan både støde på videoer, billeder og beskrivelser for at guide dig igennem hacks. Pengepungen behøver ikke at være fuld for at gennemføre DIY idéerne.
+   <section><h5>På vores website kan du finde alle mulige hacks til personliggøre dit hjem. <br> Her kan du finde videoer som guider dig igennem de forskellige DIY hacks. <br> Pengepungen behøver ikke at være fuld for at gennemføre DIY idéerne.<br>
       Der er ingen undskyldninger for ikke at komme igang! 
-      God fornøjelse.</h5></section>
+      </h5>
+	  <h4 class="text-center">God fornøjelse!</h4></section>
 	   </article>
 	  <footer class="item">&copy; Home Hacks</footer>
 	  </div>
