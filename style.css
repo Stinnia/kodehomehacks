@@ -25,11 +25,12 @@ body {
 h1 {
 	text-align: center;
 	color: #00565f;
+	margin: 20px auto;
 
 }
 h2 {
 	text-align: center;
-	margin: 0 auto;
+	margin: 20px auto;
 	color: #00565f;
 }
 /* LOGO */
@@ -125,13 +126,13 @@ nav .active{
 }
 
 hr {
-	width: 100%;
+	width: 960px	;
 	position: relative;
 	 display: block;
     height: 1px;
     border: none;	
 	background-color: #04A6B7;
-    margin: 1em 0;
+    margin: 0 auto;
     padding: 0; 
 }
 /* END TOOLTIP FOR ICONS*/
@@ -169,7 +170,7 @@ h4 {
 h5 {;
 	margin: 20px auto 20px auto;
 	width: 72.5%;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 /* UDFORSK */
@@ -265,7 +266,7 @@ border: 0px !important;
     border: none;
 	background: transparent;
     text-decoration: none;
-	margin-left: 100px;
+	margin: 10px 0 0 10px;
     cursor: pointer;
 	position: absolute;
 	float: left;
@@ -308,6 +309,13 @@ article {
 	display: inline-block;
 	width: 200px;
 }
+.ui-tabs .ui-tabs-panel {
+    display: block;
+    border-width: 0px;
+    padding: 10px 4px !important;
+    background: none;
+}
+
 .ui-widget {
     font-family: "Acumin Pro Condensed Light", "Roboto" sans-serif !important;
     font-size: 1em;
@@ -340,7 +348,11 @@ article {
 
 /* ANIMATIONER */
 .banner{
+	width: 60%;
+}
+.banner_video {
 	width: 100%;
+	margin: 0 auto;
 }
 
 
@@ -360,6 +372,7 @@ article {
 /* PROFIL */ 
 
 /* LOGIN PROFIL */
+
 input[type=text], input[type=password] {
 	display: block;
 	margin: 20px;
@@ -405,14 +418,32 @@ footer {
 }
 
 
-@media (max-width: 900px) {
-	.logoheader_resp {
-		display: none;
+
+@media screen and (max-width: 600px) {
+	.wrapper {
+		max-width: 100%;
+	}
+	.item {
+		width: 100%;
 	}
 	
+	a {
+		font-size: 12px;
+	}
+	p {
+		font-size: 10px;
+	}
+	.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    float: left;
+    padding: 0.5em 0.2em !important;
+    text-decoration: none;
 }
-
-@media screen and (max-width: 768px) {
+	.banner {
+		margin: 10px;
+	}
+	.banner p {
+		margin: 10px;
+	}
 	.logoheader {
 		display: none;
 	}
@@ -424,6 +455,40 @@ footer {
 	.menulogo {
 		display: inline-block;
 	}
+	.go-back-button {
+		width: 30px;
+		margin: 2px 0 0 2px;
+	}
+	.blog_video {
+		height: auto;
+	}
+	.author_image {
+		margin: 0 auto;
+		margin-bottom: 0;
+	}
+	.text-right {
+    text-align: center!important;
+}.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+	}
+	h2 {
+		font-size: 18px;
+		margin: 10px;
+	}
+	h3 {
+		font-size: 15px;
+	}
+	.text-font {
+		margin-bottom: 1px;
+	}
+	input[type=text], input[type=password] {
+    margin :0px;
+}
+	button .navbar-toggler {
+		position: absolute;
+		float: right !important;
+	}
 	hr{
 		width: 95%;
 		margin: 0 auto;
@@ -431,5 +496,9 @@ footer {
 	.search {
 		display: none;
 	}
+	#videosList {
+		display: block;
+	}
+	
 	
 }
