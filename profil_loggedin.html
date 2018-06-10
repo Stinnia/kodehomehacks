@@ -1,5 +1,6 @@
 <!doctype html>
-<html><head>
+<html lang="da">
+<head>
 	<!-- META TAGS -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,32 +48,22 @@
 								
 					  		
 							<!-- NAVIGATION ICONS -->
-							<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+							<div class="navbar-nav mr-auto mt-2 mt-lg-0">
 								<!-- HOME ICON -->
-								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Forside">
-						  			<li class="nav-item">
-									<a class="nav-link navbar" href="index.html"><img class="menulogo" src="pictures/menu-ikoner/hjem_hvid.png" alt="homehacks"></a>
-						  			</li>
+								<button onclick="location.href='index.html'" class="btn nav-item nav-link navbar" type="button" data-toggle="tooltip" data-placement="top" title="Forside">
+						  			<img class="menulogo" src="pictures/menu-ikoner/hjem_hvid.png" alt="homehacks">			
 								</button>
 								<!-- UDFORSK ICON -->
-								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Udforsk">
-						  			<li class="nav-item">
-									<a class="nav-link navbar" href="udforsk.html"><img class="menulogo" src="pictures/menu-ikoner/udforsk_hvid.png" alt="homehacksudforsk"></a>
-						  			</li>
+								<button onclick="location.href='udforsk.html'" type="button" class="btn nav-item nav-link navbar" data-toggle="tooltip" data-placement="top" title="Udforsk">
+						  			<img class="menulogo" src="pictures/menu-ikoner/udforsk_hvid.png" alt="homehacksudforsk">	
 								</button>
 								<!-- FAVORITTER ICON -->
-								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Favoritter">
-							 		<li class="nav-item">
-									<a class="nav-link navbar" href="favoritter.html"><img class="menulogo" src="pictures/menu-ikoner/favoritter_hvid.png" alt="homehacksfavoritter"></a>
-						  			</li>
+								<button onclick="location.href='favoritter.html'" type="button" class="btn nav-item nav-link navbar" data-toggle="tooltip" data-placement="top" title="Favoritter"><img class="menulogo" src="pictures/menu-ikoner/favoritter_hvid.png" alt="homehacksfavoritter">
 								</button>
 								<!-- PROFIL ICON -->
-								<button type="button" class="btn" data-toggle="tooltip" data-placement="top" title="Profil">
-							 		<li class="nav-item">
-									<a class="nav-link navbar" href="#"><img class="menulogo active" src="pictures/menu-ikoner/profil_hvid.png" alt="homehacksprofil"></a>
-						  			</li>
+								<button onclick="location.href='#'" type="button" class="btn nav-item nav-link navbar" data-toggle="tooltip" data-placement="top" title="Profil"><img class="menulogo active" src="pictures/menu-ikoner/profil_hvid.png" alt="homehacksprofil">
 								</button>
-							</ul>
+							</div>
 							<!-- SEARCH FORM -->
 								<form class="search form-inline my-2 my-lg-0">
 						  			<input class="search form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -114,7 +105,7 @@
 						https://codepen.io/gil--/pen/bNxZWg-->
 					<th><a href="blog_julie.html">
 							<div class="video video_1">
-							<video class="thevideo video_size" loop preload="none" controls muted>
+							<video class="thevideo video_size" loop preload="none" muted>
 							  <source src="videos/julievideo_thumb.mp4" type="video/mp4">
 							  <source src="videos/julievideo_thumb.mp4" type="video/webm">
 							</video>
@@ -123,7 +114,7 @@
 					</th>
 							<th><a href="blog_amara.html">
 							<div class="video video_2 møbler column hack">
-								<video class="thevideo video_size" loop preload="none" controls muted>
+								<video class="thevideo video_size" loop preload="none" muted>
 							  	<source src="videos/amaravideo_thumb.mp4" type="video/mp4">
 							  	<source src="videos/amaravideo_thumb.mp4" type="video/webm">
 								</video>
